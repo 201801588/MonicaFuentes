@@ -55,7 +55,7 @@
         If IMPERIAL.Checked Then
             If TOTALMATERIALES <= 3 Then
                 SUMA = CUBRECAMAI + (Val(TEXTLINO.Text) * MATLINO) + (Val(TEXTALGODÓN.Text) * MATALGODON) + (Val(TEXTSEDA.Text) * MATSEDA) + (Val(TEXTHILOCRUDO.Text) * MATHILOCRUDO)
-                TEXTMANODEOBRA.Text = Val(IMPERIAL)
+                TEXTMANODEOBRA.Text = Val(CUBRECAMAI)
                 TEXTMATERIALES.Text = Math.Round((Val(TEXTLINO.Text) * MATLINO) + (Val(TEXTALGODÓN.Text) * MATALGODON) + (Val(TEXTSEDA.Text) * MATSEDA) + (Val(TEXTHILOCRUDO.Text) * MATHILOCRUDO), 2)
                 TEXTCOSTO.Text = Math.Round(Val(SUMA) + Val(TEXTMANODEOBRA.Text), 2)
                 TEXTPRECIO.Text = Math.Round(Val(TEXTCOSTO.Text) * 0.65 + Val(TEXTCOSTO.Text), 2)
